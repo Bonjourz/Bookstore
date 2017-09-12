@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="model.Statics" table="statics">
+		<id name="Id" type="int">
+			<column name="id" />
+			<generator class="native" />
+		</id>
+		<property name="buyerId" type="int">
+			<column name="buyerid" />
+		</property>
+		<property name="month" type="java.lang.String">
+			<column name="month" />
+		</property>
+		<property name="type" type="java.lang.String">
+			<column name="type" />
+		</property>
+		<property name="price" type="double">
+			<column name="price" />
+		</property>
+	</class>
+</hibernate-mapping>
